@@ -27,16 +27,16 @@ export default function Hero() {
       <div className="relative z-10 min-h-screen flex flex-col justify-end px-6 md:px-14 pb-14 pt-28">
         <div className="max-w-3xl">
           <h1
-            className="font-bold text-white mb-8"
+            className="font-medium text-white mb-8"
             style={{
-              fontSize: "clamp(3rem, 9vw, 7.5rem)",
-              letterSpacing: "-0.04em",
-              lineHeight: "0.92",
+              fontSize: "clamp(1.75rem, 4vw, 3.25rem)",
+              letterSpacing: "-0.02em",
+              lineHeight: "1.15",
             }}
           >
-            I&apos;m Diego.
+            I&apos;m Diego, product leader
             <br />
-            AI-pilled PM.
+            building AI products from 0 to 1.
           </h1>
 
           <div className="flex flex-wrap gap-3">
