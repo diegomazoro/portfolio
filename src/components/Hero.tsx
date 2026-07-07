@@ -108,7 +108,7 @@ export default function Hero() {
           >
             I&apos;m Diego.
             <br />
-            AI pilled PM.
+            AI-pilled PM.
           </h1>
 
           <p
