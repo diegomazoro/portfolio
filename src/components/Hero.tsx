@@ -1,3 +1,5 @@
+import StatCounter from "./StatCounter";
+
 const GRAIN_SVG =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23n)'/%3E%3C/svg%3E";
 
@@ -57,23 +59,9 @@ export default function Hero() {
 
         {/* Stats — below CTAs */}
         <div className="mt-16 flex flex-col sm:flex-row gap-8 sm:gap-16">
-          {[
-            { value: "10+", label: "Years building products" },
-            { value: "2",   label: "Startups founded" },
-            { value: "20+", label: "Projects shipped" },
-          ].map((stat) => (
-            <div key={stat.label}>
-              <p
-                className="font-bold text-white"
-                style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", letterSpacing: "-0.04em", lineHeight: "1" }}
-              >
-                {stat.value}
-              </p>
-              <p className="text-xs tracking-[0.14em] uppercase text-white/40 mt-2">
-                {stat.label}
-              </p>
-            </div>
-          ))}
+          <StatCounter value={10} suffix="+" label="Years building products" />
+          <StatCounter value={2}  label="Startups founded" />
+          <StatCounter value={20} suffix="+" label="Projects shipped" />
         </div>
       </div>
     </section>
