@@ -55,21 +55,21 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Stats — bottom right */}
-        <div className="absolute bottom-14 right-6 md:right-14 flex gap-8 text-right">
+        {/* Stats — below CTAs */}
+        <div className="mt-16 flex flex-col sm:flex-row gap-8 sm:gap-16">
           {[
-            { label: "Projects shipped", value: "20+" },
-            { label: "Years building", value: "5+" },
-            { label: "Domains", value: "4" },
+            { value: "10+", label: "Years building products" },
+            { value: "2",   label: "Startups founded" },
+            { value: "20+", label: "Projects shipped" },
           ].map((stat) => (
             <div key={stat.label}>
               <p
                 className="font-bold text-white"
-                style={{ fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)", letterSpacing: "-0.03em" }}
+                style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", letterSpacing: "-0.04em", lineHeight: "1" }}
               >
                 {stat.value}
               </p>
-              <p className="text-[9px] tracking-[0.12em] uppercase text-white/35 mt-0.5">
+              <p className="text-xs tracking-[0.14em] uppercase text-white/40 mt-2">
                 {stat.label}
               </p>
             </div>
