@@ -113,9 +113,11 @@ export default function Hero() {
               lineHeight: "0.92",
             }}
           >
-            Building products
+            I&apos;m Diego, an AI
             <br />
-            people love.
+            generated Product
+            <br />
+            Manager.
           </h1>
 
           <p
