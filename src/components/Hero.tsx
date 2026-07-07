@@ -26,10 +26,10 @@ export default function Hero() {
       />
 
       {/* Hero content — editorial bottom-left layout */}
-      <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 md:px-14 pb-14 pt-24">
+      <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 md:px-14 pb-14 pt-16">
         <div className="max-w-3xl">
           <h1
-            className="font-medium text-white mb-8"
+            className="font-medium text-white mb-16"
             style={{
               fontSize: "clamp(1.75rem, 4vw, 3.25rem)",
               letterSpacing: "-0.02em",
