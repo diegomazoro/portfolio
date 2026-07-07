@@ -98,13 +98,6 @@ export default function Hero() {
       {/* Hero content — editorial bottom-left layout */}
       <div className="relative z-10 min-h-screen flex flex-col justify-end px-6 md:px-14 pb-14 pt-28">
         <div className="max-w-3xl">
-          <p
-            className="text-[10px] font-semibold tracking-[0.22em] uppercase text-white/40 mb-8 flex items-center gap-2"
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#cdabfe] inline-block" />
-            Available for new projects
-          </p>
-
           <h1
             className="font-bold text-white mb-8"
             style={{
