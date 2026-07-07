@@ -1,45 +1,6 @@
 const GRAIN_SVG =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23n)'/%3E%3C/svg%3E";
 
-const cards = [
-  {
-    id: "a",
-    label: "Product Builder",
-    animClass: "animate-float-1",
-    position: "top-[10%] left-[6%]",
-    size: "w-44 h-56 md:w-52 md:h-64",
-    bg: "linear-gradient(145deg, #2a1f3d 0%, #4a2060 40%, #7c3aed 100%)",
-    grainOpacity: "0.35",
-  },
-  {
-    id: "b",
-    label: "Designer",
-    animClass: "animate-float-2",
-    position: "top-[6%] right-[10%]",
-    size: "w-36 h-48 md:w-44 md:h-56",
-    bg: "linear-gradient(155deg, #1a0f0a 0%, #7a2010 50%, #fe7141 100%)",
-    grainOpacity: "0.4",
-  },
-  {
-    id: "c",
-    label: "Full Stack",
-    animClass: "animate-float-3",
-    position: "top-[42%] right-[5%]",
-    size: "w-32 h-40 md:w-40 md:h-52",
-    bg: "linear-gradient(130deg, #0f1a2a 0%, #1a3a5c 50%, #2563eb 100%)",
-    grainOpacity: "0.3",
-  },
-  {
-    id: "d",
-    label: "Available",
-    animClass: "animate-float-4",
-    position: "top-[30%] left-[3%]",
-    size: "w-28 h-36 md:w-36 md:h-44",
-    bg: "linear-gradient(160deg, #1f2a1a 0%, #2d5a20 50%, #cdabfe 100%)",
-    grainOpacity: "0.38",
-  },
-];
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#09090b]">
@@ -61,39 +22,6 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none opacity-[0.12]"
         style={{ backgroundImage: `url("${GRAIN_SVG}")`, backgroundRepeat: "repeat" }}
       />
-
-      {/* Floating cards — hidden on small screens to avoid clutter */}
-      <div className="hidden md:block">
-        {cards.map((card) => (
-          <div
-            key={card.id}
-            className={`absolute ${card.position} ${card.size} ${card.animClass}`}
-          >
-            {/* Card face */}
-            <div
-              className="relative w-full h-full rounded-[3px] shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
-              style={{ background: card.bg }}
-            >
-              {/* Grain on each card */}
-              <div
-                className="absolute inset-0 rounded-[3px]"
-                style={{
-                  backgroundImage: `url("${GRAIN_SVG}")`,
-                  backgroundRepeat: "repeat",
-                  opacity: card.grainOpacity,
-                  mixBlendMode: "overlay",
-                }}
-              />
-            </div>
-            {/* Label tag */}
-            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
-              <span className="text-[9px] font-semibold tracking-[0.18em] uppercase bg-white text-black px-2.5 py-1 shadow-sm">
-                {card.label}
-              </span>
-            </div>
-          </div>
-        ))}
-      </div>
 
       {/* Hero content — editorial bottom-left layout */}
       <div className="relative z-10 min-h-screen flex flex-col justify-end px-6 md:px-14 pb-14 pt-28">
