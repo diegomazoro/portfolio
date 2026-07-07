@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Diego Mazo — Product Builder",
     description:
       "Personal portfolio of Diego Mazo. Building products at the intersection of technology, design, and business.",
-    url: "https://diegomazo.com",
+    url: "https://diegomazo.xyz",
     siteName: "Diego Mazo",
     locale: "en_US",
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Personal portfolio of Diego Mazo. Building products at the intersection of technology, design, and business.",
   },
-  metadataBase: new URL("https://diegomazo.com"),
+  metadataBase: new URL("https://diegomazo.xyz"),
 };
 
 export default function RootLayout({
