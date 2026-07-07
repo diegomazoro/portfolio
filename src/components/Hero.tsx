@@ -24,7 +24,7 @@ export default function Hero() {
       />
 
       {/* Hero content — editorial bottom-left layout */}
-      <div className="relative z-10 min-h-screen flex flex-col justify-end px-6 md:px-14 pb-14 pt-28">
+      <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 md:px-14 pb-14 pt-24">
         <div className="max-w-3xl">
           <h1
             className="font-medium text-white mb-8"
