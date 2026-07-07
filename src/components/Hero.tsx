@@ -111,15 +111,6 @@ export default function Hero() {
             AI-pilled PM.
           </h1>
 
-          <p
-            className="text-white/45 max-w-xs mb-10 leading-relaxed"
-            style={{ fontSize: "clamp(0.8rem, 1.2vw, 0.95rem)", letterSpacing: "0.01em" }}
-          >
-            Diego Mazo — product builder across web,
-            <br />
-            mobile, data, and design.
-          </p>
-
           <div className="flex flex-wrap gap-3">
             <a
               href="#projects"
