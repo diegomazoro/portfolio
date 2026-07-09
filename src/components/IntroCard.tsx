@@ -111,6 +111,7 @@ export default function IntroCard() {
         tabIndex={0}
         onKeyDown={(e) => e.key === "Enter" && open()}
         aria-label="Click to learn more about Diego"
+        data-tooltip="Click to learn more about me"
         className={`relative cursor-pointer rounded-2xl bg-[#18181b] border border-[#27272a] p-6 hover:border-[#6366f1]/50 transition-all duration-200 select-none ${expanded ? "opacity-0 pointer-events-none" : "opacity-100"}`}
       >
         {/* Expand icon */}
